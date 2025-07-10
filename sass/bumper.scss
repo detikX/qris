@@ -1,0 +1,14 @@
+.bumper {
+    .image-color {
+        position: absolute;
+        left: 16%;
+        top: 8%;
+        width: 520px;
+        height: auto;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
