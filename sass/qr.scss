@@ -10,7 +10,7 @@
     flex-direction: column;
     translate: -50% -50%;
     left: 50%;
-    top: 30%;
+    top: 50%;
     .qrcode {
         position: relative;
         width: 120px;
@@ -68,18 +68,18 @@
         position: absolute;
         /* inset: 0; */
         background: url(../img/border.png);
-        background-size: 120px;
+        background-size: 140px;
         background-repeat: no-repeat;
         animation: animateText 0.5s linear infinite;
-        width: 120px;
-        height: 120px;
+        width: 140px;
+        top: -12px;
+        height: 140px;
         @media screen and (max-width: 768px) {
-            width: 140px;
-            height: 140px;
             background-size: 140px;
-            top: 40%;
-            left: 50%;
-            translate: -50% -50%;
+
+            width: 140px;
+            top: -12px;
+            height: 140px;
         }
         // border: 1px solid #1d1d1d !important;
     }

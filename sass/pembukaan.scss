@@ -1,9 +1,45 @@
 .pembukaan {
-    .hp {
+    .framing {
         position: relative;
-        width: 360px;
+        width: 100%;
         height: 360px;
         margin: 0 auto;
+    }
+    .qr-nya {
+        position: relative;
+        margin: 0 auto;
+        height: auto;
+        position: absolute;
+        left: 45%;
+        top: 40%;
+        translate: -50% -50%;
+        width: 150px;
+        @media screen and (max-width: 768px) {
+            left: 35%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .all-hp {
+        position: relative;
+        height: 360px;
+        // display: none;
+        z-index: 5;
+    }
+    .hp {
+        // position: relative;
+        // width: 360px;
+        // height: 360px;
+        // margin: 0 auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+        width: 360px;
+        height: 360px;
         img {
             width: 100%;
             height: 100%;

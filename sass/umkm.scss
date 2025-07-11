@@ -1,0 +1,12 @@
+.umkm {
+    min-height: auto;
+    .image {
+        width: 360px;
+        height: auto;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
