@@ -1,12 +1,58 @@
 .umkm {
     min-height: auto;
     .image {
-        width: 360px;
-        height: auto;
+        width: 100%;
+        height: 400px;
+        position: relative;
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
+    }
+}
+
+.bubble-chat {
+    width: 200px;
+    position: absolute;
+    height: auto;
+    background: white;
+    border-radius: 16px;
+    padding: 8px;
+    &.leftx {
+        text-align: right;
+        left: 85px;
+        top: 161px;
+        &::before {
+            width: 0;
+            height: 0;
+            border-top: 12px solid transparent;
+            border-left: 24px solid #fff;
+            border-bottom: 12px solid transparent;
+            content: "";
+            position: absolute;
+            right: -10px;
+            top: 64px;
+            rotate: 43deg;
+        }
+    }
+    &.rightx {
+        bottom: 103px;
+        right: 37px;
+        &::before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-top: 12px solid transparent;
+            border-right: 24px solid #fff;
+            position: absolute;
+            border-bottom: 12px solid transparent;
+            left: -20px;
+            top: 36px;
+        }
+    }
+    p {
+        color: #1a1a1a;
+        font-size: 1rem;
     }
 }
