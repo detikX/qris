@@ -10,7 +10,7 @@ gsap.timeline({
         start: "center center",
         end: "bottom top",
         scrub: 1,
-        pin: true
+        pin: true,
     }
 })
     .from(".text1", {
@@ -18,30 +18,21 @@ gsap.timeline({
         opacity: 0,
 
     })
-    .from(".text2,.text1", {
+    .from(".text2", {
         // x: innerWidth * 1.8
         opacity: 0,
     })
-    .from(".text3,.text1,.text2", {
+    .from(".text3", {
         // x: innerWidth * 1.5
         opacity: 0,
     })
-    .from(".text4,.text2,.text3,.text1", {
+    .from(".text4", {
         // x: innerWidth * -1
         opacity: 0,
     })
-    .from(".text5,.text3", {
+    .from(".text5", {
         // x: innerWidth * -1.5
         opacity: 0,
     })
-    .from(".text6", {
-        // y: innerHeight * 1.5
-    })
-    .from(".angkax", {
-        y: innerHeight * 1,
-        rotate: 360
-    }).from(".angkax1", {
-        y: innerHeight * 1,
 
-    })
 
