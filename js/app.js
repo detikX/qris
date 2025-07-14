@@ -18,19 +18,19 @@ gsap.timeline({
         opacity: 0,
 
     })
-    .from(".text2", {
+    .from(".text2,.text1", {
         // x: innerWidth * 1.8
         opacity: 0,
     })
-    .from(".text3", {
+    .from(".text3, .text2,.text1", {
         // x: innerWidth * 1.5
         opacity: 0,
     })
-    .from(".text4", {
+    .from(".text4, .text2,.text1,.text3", {
         // x: innerWidth * -1
         opacity: 0,
     })
-    .from(".text5", {
+    .from(".text5,.text2,.text1,.text3,.text4", {
         // x: innerWidth * -1.5
         opacity: 0,
     })
