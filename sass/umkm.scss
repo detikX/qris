@@ -4,6 +4,9 @@
         width: 100%;
         height: 400px;
         position: relative;
+        @media screen and (max-width: 768px) {
+            // height: 100vh;
+        }
         img {
             width: 100%;
             height: 100%;
@@ -24,7 +27,7 @@
         left: 85px;
         top: 161px;
         @media screen and (max-width: 768px) {
-            left: 16px;
+            left: 8px;
             top: 100px;
         }
         &::before {
@@ -39,7 +42,7 @@
             top: 64px;
             rotate: 43deg;
             @media screen and (max-width: 768px) {
-                right: 16px;
+                right: 70px;
                 top: 66px;
                 rotate: 65deg;
             }
