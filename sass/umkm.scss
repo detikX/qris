@@ -22,6 +22,29 @@
     background: white;
     border-radius: 16px;
     padding: 8px;
+    &.biru {
+        background: $colorred !important;
+        &::before {
+            width: 0;
+            height: 0;
+            border-top: 12px solid transparent;
+            border-left: 24px solid;
+            border-bottom: 12px solid transparent;
+            content: "";
+            position: absolute;
+            right: -10px;
+            top: 64px;
+            rotate: 43deg;
+            @media screen and (max-width: 768px) {
+                right: 70px;
+                top: 66px;
+                rotate: 65deg;
+            }
+        }
+    }
+    .he {
+        color: $colorred;
+    }
     &.leftx {
         text-align: right;
         left: 85px;

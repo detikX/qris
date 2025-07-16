@@ -19,6 +19,8 @@ gsap.timeline({
         opacity: 0,
 
     })
+
+
     .from(".text2", {
         // x: innerWidth * 1.8
         opacity: 0,
