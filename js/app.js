@@ -35,15 +35,15 @@ gsap.timeline({
         //opacity: 0,
     })
     .from(".text5", {
-        x: innerWidth * -1.5
+        x: innerWidth * 1.5
         //opacity: 0,
     })
     .from(".text6", {
-        x: innerWidth * 2
+        x: innerWidth * -2
         //opacity: 0,
     })
     .from(".text7", {
-        x: innerWidth * -2
+        x: innerWidth * 2
         //opacity: 0,
     })
 
