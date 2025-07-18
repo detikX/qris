@@ -1,6 +1,7 @@
 $(document).ready(function () {
     AOS.init();
     // new WOW().init();
+    new WOW().init();
 })
 
 
@@ -82,3 +83,8 @@ gsap.timeline({
         x: innerWidth * -1.8
         //opacity: 0,
     })
+
+
+$(".slicker").slick(
+    { fade: true, }
+)

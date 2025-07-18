@@ -6,146 +6,137 @@ Highcharts.setOptions({
 
 Highcharts.chart('container', {
     chart: {
-        // type: 'column',
-        backgroundColor: 'rgba(255,255,255,0.7)',
+        backgroundColor: 'rgba(255,255,255,.7)',
         borderRadius: '24px'
     },
     title: {
-        text: 'Info Penumpang KRL',
-        style: {
-            color: "#1b1b1b",
-            font: 'bold 18px "Source Code Pro", sans-serif',
-            // lineHeight: '2rem'
-        }
+        text: null,
+        align: 'left'
     },
+
     subtitle: {
-        text: 'Sumber: BPS dari PT KAI Commuter Jabodetabek (Hingga April 2025)',
-        style: {
-            color: "#1b1b1b",
-            font: 'normal 12px "Source Code Pro", sans-serif',
-            // lineHeight: '2rem'
-        }
-    },
-    credits: {
-        enabled: false //buat highcharts com
-    },
-    legend: {
-        itemStyle: {
-            font: 'bold .8rem Quicksand',
-            color: '#1b1b1b'
-        },
-
-
-    },
-    accessibility: {
-        point: {
-            valueDescriptionFormat:
-                '{xDescription}{separator}{value} million(s)'
-        }
-    },
-
-    xAxis: {
-        title: {
-            text: 'Tahun',
-            style: {
-                // color: "#fafafa",
-                font: 'normal 14px "Source Code Pro", sans-serif',
-                // lineHeight: '2rem'
-                color: "#1b1b1b",
-                // fontWeight: 'bold',
-                textOutline: false
-            }
-        },
-        categories: [2021, 2022, 2023, 2024, 2025],
-        labels: {
-            // text: null,
-            // formatter: function () {
-            //     // var a = this.y.toString().replace('.', ',');
-            //     // return a + '%';
-            // },
-            style: {
-                // color: "#fafafa",
-                font: 'bold 14px "Source Code Pro", sans-serif',
-                // lineHeight: '2rem'
-                color: "#1b1b1b",
-                // fontWeight: 'bold',
-                textOutline: false
-            }
-        },
+        text: null,
+        align: 'left'
     },
 
     yAxis: {
-        type: 'logarithmic',
         title: {
-            text: 'Jumlah Penumpang (Juta)',
-            style: {
-                // color: "#fafafa",
-                font: 'normal 14px "Source Code Pro", sans-serif',
-                // lineHeight: '2rem'
-                color: "#1b1b1b",
-                // fontWeight: 'bold',
-                textOutline: false
-            }
+            text: null
         },
-        labels: {
-            style: {
-                // color: "#fafafa",
-                font: 'bold 14px "Source Code Pro", sans-serif',
-                // lineHeight: '2rem'
-                color: "#1b1b1b",
-                // fontWeight: 'bold',
-                textOutline: false
-            }
+    },
+
+    xAxis: {
+        accessibility: {
+            rangeDescription: 'Range: 2010 to 2022'
         }
     },
 
-    tooltip: {
-        headerFormat: '<b>{series.name}</b><br />',
-        pointFormat: '{point.y} orang',
-        style: {
-            // fontWeight: 'bold',
-            fontFamily: 'Source Code Pro',
-            fontSize: '1rem'
+    legend: {
+        layout: 'horizontal',
+        align: 'center',
+        verticalAlign: 'bottom'
+    },
+
+    plotOptions: {
+        series: {
+            label: {
+                connectorAllowed: false
+            },
+            pointStart: 2020
         }
     },
 
     series: [{
-        name: 'Penumpang KRL',
-        keys: ['y', 'color'],
+        name: 'Volume Transaksi',
         data: [
-            // [109252000, '#f97432'],
-            // [328154000, '#8d0073'],
-            // [290891000, '#ba0046'],
-            // [217965000, '#0000ff'],
-            // [126740000, '#8d0073'],
-            [126740000, '#8d0073'],
-            [217965000, '#0000ff'],
-            [290891000, '#ba0046'],
-            [328154000, '#ff0000'],
-            [109252000, '#0000ff']
+            46000000, 585000000, 1000000000, 2000000000, 4000000000
+        ]
+    }],
 
-        ],
-        color: {
-            linearGradient: {
-                x1: 0,
-                x2: 0,
-                x3: 1,
-                x4: 0,
-                x5: 0,
-                y1: 1,
-                y2: 0,
-                y3: 1,
-                y4: 0,
-                y5: 1,
-
+    responsive: {
+        rules: [{
+            condition: {
+                maxWidth: 500
             },
-            stops: [
-                [0, '#0000ff'],
-                [1, '#ff0000'],
-                [2, '#0000ff'],
-                [3, '#ff0000'],
-                [4, '#b50000'],
-            ]
+            chartOptions: {
+                legend: {
+                    layout: 'horizontal',
+                    align: 'center',
+                    verticalAlign: 'bottom'
+                }
+            }
+        }]
+    }
+
+});
+
+
+
+Highcharts.chart('container2', {
+    chart: {
+        backgroundColor: 'rgba(255,255,255,.7)',
+        borderRadius: '24px'
+    },
+    title: {
+        text: null,
+        align: 'left'
+    },
+
+    subtitle: {
+        text: null,
+        align: 'left'
+    },
+
+    yAxis: {
+        // title: {
+        //     text: 'Number of Employees'
+        // }
+        title: {
+            text: null
+        },
+    },
+
+    xAxis: {
+        accessibility: {
+            rangeDescription: 'Range: 2010 to 2022'
         }
-    }]
+    },
+
+    legend: {
+        layout: 'horizontal',
+        align: 'center',
+        verticalAlign: 'bottom'
+    },
+
+    plotOptions: {
+        series: {
+            label: {
+                connectorAllowed: false
+            },
+            pointStart: 2020
+        }
+    },
+
+    series: [{
+        name: 'Nilai Transaksi',
+        data: [
+            4700000000000, 45700000000000, 90000000000000, 200000000000000, 300000000000000
+        ]
+    }],
+
+    responsive: {
+        rules: [{
+            condition: {
+                maxWidth: 500
+            },
+            chartOptions: {
+                legend: {
+                    layout: 'horizontal',
+                    align: 'center',
+                    verticalAlign: 'bottom'
+                }
+            }
+        }]
+    }
+
 });
