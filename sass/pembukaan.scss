@@ -14,6 +14,9 @@
             height: 100%;
             object-fit: contain;
         }
+        &.tangan {
+             animation: atasbawah 2s linear infinite;
+        }
     }
    
 }
@@ -64,3 +67,18 @@
             object-fit: contain;
         }
     }
+
+    @keyframes atasbawah {
+    0%,100% {
+        top: 50%;
+        // opacity: 0;
+        // top: 15%;
+    }
+    
+    50% {
+        top: 49.5%;
+        // top: 5%;
+    }
+    
+    
+}
