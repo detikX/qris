@@ -26,7 +26,7 @@
     width: 200px;
     position: absolute;
     height: auto;
-    background: white;
+    background: #bbea80;
     border-radius: 16px;
     padding: 8px;
     &.biru {
@@ -64,7 +64,7 @@
             width: 0;
             height: 0;
             border-top: 12px solid transparent;
-            border-left: 24px solid #fff;
+            border-left: 24px solid #bbea80;
             border-bottom: 12px solid transparent;
             content: "";
             position: absolute;
@@ -90,7 +90,7 @@
             width: 0;
             height: 0;
             border-top: 12px solid transparent;
-            border-right: 24px solid #fff;
+            border-right: 24px solid #bbea80;
             position: absolute;
             border-bottom: 12px solid transparent;
             left: -20px;

@@ -3,7 +3,7 @@
 
 $primary: #284863; //(40,72,99)
 $secondary: #33a4b9; //(51,164,185)
-$colorred: #464845; //#164374; //#1d1d1d; //#b8f0f4; //#373c40; //#21409a; // //#87c4ff; //#7cffb1; //(139,215,219)
+$colorred: #e7ffcc;// black#464845; //#164374; //#1d1d1d; //#b8f0f4; //#373c40; //#21409a; // //#87c4ff; //#7cffb1; //(139,215,219)
 $third: #baf5ed; //(186,245,237)
 // #ecf3f1	//(236,243,241)
 
@@ -366,8 +366,8 @@ main {
     overflow-x: clip;
     // background: $colorred;
     p {
-        color: #f3f3f3;
-        // color: #1b1b1b;
+        // color: #f3f3f3;
+        color: #1b1b1b;
         font-weight: 500;
     }
 }
