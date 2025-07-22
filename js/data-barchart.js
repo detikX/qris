@@ -7,7 +7,7 @@ Highcharts.setOptions({
 Highcharts.chart('container', {
     chart: {
         type: 'bar',
-                backgroundColor: 'rgba(255,255,255,.7)'
+        backgroundColor: 'rgba(255,255,255,.7)'
     },
     title: {
         text: null
@@ -16,16 +16,16 @@ Highcharts.chart('container', {
         text: null
     },
     xAxis: {
-        categories: ['2020', '2021', '2022', '2023','2024'],
+        categories: ['2020', '2021', '2022', '2023', '2024'],
         // title: {
         //     text: null
         // },
         // gridLineWidth: 1,
         // lineWidth: 0
         // xAxis: {
-            // title: {
-            //     text: null
-            // },
+        // title: {
+        //     text: null
+        // },
         // },
     },
     yAxis: {
@@ -89,17 +89,26 @@ Highcharts.chart('container2', {
         text: null
     },
     xAxis: {
-        categories: ['2020', '2021', '2022', '2023','2024'],
+        categories: ['2020', '2021', '2022', '2023', '2024'],
         // title: {
         //     text: null
         // },
         // gridLineWidth: 1,
         // lineWidth: 0
         // xAxis: {
-            // title: {
-            //     text: null
-            // },
+        // title: {
+        //     text: null
         // },
+        // },
+        labels: {
+            style: {
+                // color: "#fafafa",
+                font: '14px "jost", sans-serif',
+                // lineHeight: '2rem'
+                textOutline: false
+            }
+
+        }
     },
     yAxis: {
         // accessibility: {
@@ -117,7 +126,12 @@ Highcharts.chart('container2', {
         // gridLineWidth: 0
     },
     tooltip: {
-        valueSuffix: ' Rupiah'
+        valueSuffix: ' Rupiah',
+        style: {
+            // fontWeight: 'bold',
+            fontFamily: 'jost',
+            fontSize: '14px'
+        }
     },
     plotOptions: {
         bar: {
@@ -126,7 +140,16 @@ Highcharts.chart('container2', {
                 enabled: true
             },
             groupPadding: 0.1
-        }
+        },
+        dataLabels: {
+                style: {
+                    // color: "#fafafa",
+                    font: 'normal 14px "jost", sans-serif',
+                    // lineHeight: '2rem'
+                    fontWeight: 'normal',
+                    textOutline: false
+                },
+            }
     },
     legend: {
         layout: 'vertical',
@@ -137,7 +160,11 @@ Highcharts.chart('container2', {
         floating: true,
         borderWidth: 1,
         backgroundColor: 'var(--highcharts-background-color, #ffffff)',
-        shadow: true
+        shadow: true,
+        itemStyle: {
+            font: 'normal 11px Jost',
+            // color: '#A0A0A0'
+        },
     },
     credits: {
         enabled: false
