@@ -27,12 +27,30 @@ Highcharts.chart('container', {
         //     text: null
         // },
         // },
+        labels: {
+            style: {
+                // color: "#fafafa",
+                font: '14px "jost", sans-serif',
+                // lineHeight: '2rem'
+                textOutline: false
+            }
+
+        }
     },
     yAxis: {
         // accessibility: {
         //     rangeDescription: 'Range: 2010 to 2022'
         // }
-        title: 'null'
+        title: 'null',
+        labels: {
+            style: {
+                // color: "#fafafa",
+                font: '14px "jost", sans-serif',
+                // lineHeight: '2rem'
+                textOutline: false
+            }
+
+        },
         // min: 0,
         // title: {
         //     text: 'Population (millions)',
@@ -44,7 +62,12 @@ Highcharts.chart('container', {
         // gridLineWidth: 0
     },
     tooltip: {
-        valueSuffix: ''
+        valueSuffix: '',
+         style: {
+            // fontWeight: 'bold',
+            fontFamily: 'jost',
+            fontSize: '14px'
+        }
     },
     plotOptions: {
         bar: {
@@ -53,7 +76,16 @@ Highcharts.chart('container', {
                 enabled: true
             },
             groupPadding: 0.1
-        }
+        },
+        dataLabels: {
+                style: {
+                    // color: "#fafafa",
+                    font: 'normal 14px "jost", sans-serif',
+                    // lineHeight: '2rem'
+                    fontWeight: 'normal',
+                    textOutline: false
+                },
+            }
     },
     legend: {
         layout: 'vertical',
@@ -64,7 +96,11 @@ Highcharts.chart('container', {
         floating: true,
         borderWidth: 1,
         backgroundColor: 'var(--highcharts-background-color, #ffffff)',
-        shadow: true
+        shadow: true,
+        itemStyle: {
+            font: 'normal 11px jost',
+            // color: '#A0A0A0'
+        },
     },
     credits: {
         enabled: false
@@ -114,6 +150,15 @@ Highcharts.chart('container2', {
         // accessibility: {
         //     rangeDescription: 'Range: 2010 to 2022'
         // }
+         labels: {
+            style: {
+                // color: "#fafafa",
+                font: '14px "jost", sans-serif',
+                // lineHeight: '2rem'
+                textOutline: false
+            }
+
+        },
         title: 'null'
         // min: 0,
         // title: {
@@ -162,7 +207,7 @@ Highcharts.chart('container2', {
         backgroundColor: 'var(--highcharts-background-color, #ffffff)',
         shadow: true,
         itemStyle: {
-            font: 'normal 11px Jost',
+            font: 'normal 11px jost',
             // color: '#A0A0A0'
         },
     },

@@ -1,6 +1,16 @@
 .data {
     background: #bbea80;
     // background: #e7ffcc;
+    // min-height: auto;
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 30vh;
+        background: $colorred;
+    }
     
     .slicker {
         // position: absolute;
@@ -36,9 +46,9 @@
     }
     .presen {
         position: absolute;
-        bottom: 0;
+        bottom: -16%;
         right: -24%;
-        width: 220px;
+        width: 220px;z-index: 3;
         height: 220px;
         @media screen and (max-width:768px) {
             right: -36%;
@@ -52,7 +62,7 @@
     .boss {
         position: absolute;
         left: -24%;
-        bottom: 0;
+        bottom: -16%;
         width: 220px;
         height: 220px;
         z-index: 3;
