@@ -676,8 +676,11 @@ section {
     left: 50%;
     z-index: 3;
     transform: translate(-50%, -50%);
+    @media screen and (max-width:768px) {
+        top: 93%;
+    }
     small {
-        color: #fafafa;
+        color: #1b1b1b;
     }
 }
 
@@ -685,7 +688,7 @@ section {
     margin: 0 auto;
     display: block;
     border-radius: 50px;
-    border: 2px solid #fafafa;
+    border: 2px solid #1b1b1b;
     height: 50px;
     width: 25px;
     position: relative;
@@ -693,7 +696,7 @@ section {
 
 .move {
     position: absolute;
-    background-color: #fafafa;
+    background-color: #1b1b1b;
     height: 10px;
     width: 10px;
     border-radius: 50%;

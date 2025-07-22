@@ -88,3 +88,7 @@ gsap.timeline({
 $(".slicker").slick(
     { fade: true, }
 )
+
+$(".positive").slick()
+$(".negative").slick()
+
