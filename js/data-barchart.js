@@ -87,20 +87,23 @@ Highcharts.chart('container', {
                 },
             }
     },
+    // legend: {
+    //     layout: 'vertical',
+    //     align: 'right',
+    //     verticalAlign: 'top',
+    //     x: -40,
+    //     y: 80,
+    //     floating: true,
+    //     borderWidth: 1,
+    //     backgroundColor: 'var(--highcharts-background-color, #ffffff)',
+    //     shadow: true,
+    //     itemStyle: {
+    //         font: 'normal 11px jost',
+    //         // color: '#A0A0A0'
+    //     },
+    // },
     legend: {
-        layout: 'vertical',
-        align: 'right',
-        verticalAlign: 'top',
-        x: -40,
-        y: 80,
-        floating: true,
-        borderWidth: 1,
-        backgroundColor: 'var(--highcharts-background-color, #ffffff)',
-        shadow: true,
-        itemStyle: {
-            font: 'normal 11px jost',
-            // color: '#A0A0A0'
-        },
+        enabled: false
     },
     credits: {
         enabled: false
@@ -196,20 +199,23 @@ Highcharts.chart('container2', {
                 },
             }
     },
-    legend: {
-        layout: 'vertical',
-        align: 'right',
-        verticalAlign: 'top',
-        x: -40,
-        y: 80,
-        floating: true,
-        borderWidth: 1,
-        backgroundColor: 'var(--highcharts-background-color, #ffffff)',
-        shadow: true,
-        itemStyle: {
-            font: 'normal 11px jost',
-            // color: '#A0A0A0'
-        },
+    // legend: {
+    //     layout: 'vertical',
+    //     align: 'right',
+    //     verticalAlign: 'top',
+    //     x: -40,
+    //     y: 80,
+    //     floating: true,
+    //     borderWidth: 1,
+    //     backgroundColor: 'var(--highcharts-background-color, #ffffff)',
+    //     shadow: true,
+    //     itemStyle: {
+    //         font: 'normal 11px jost',
+    //         // color: '#A0A0A0'
+    //     },
+    // },
+     legend: {
+        enabled: false
     },
     credits: {
         enabled: false
