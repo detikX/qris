@@ -19,6 +19,9 @@
         bottom: 0;
         height: 30vh;
         background: #8ae7c7;
+        @media screen and (max-width:768px) {
+            height: 22vh;
+        }
     }
 
     .color-primary {
