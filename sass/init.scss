@@ -196,7 +196,9 @@ $colorhelp: #33a4b9;
 .highcharts-data-table tr:hover {
     background: #f1f7ff;
 }
-
+.color-primary {
+    color: #1b1b1b !important;
+}
 section {
     padding: 32px 0;
     background: $colorred;
@@ -210,7 +212,7 @@ section {
 
     h3 {
         // color: $colorred;
-        font-family: "Jost", sans-serif;
+        font-family: "Jost", sans-serif !important;
         font-weight: 700;
         color: #fcfcfc;
         font-size: 3.3rem;

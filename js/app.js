@@ -90,5 +90,10 @@ $(".slicker").slick(
 )
 
 $(".positive").slick()
-$(".negative").slick()
+$(".negative").slick();
+
+
+
+// gsap.registerPlugin(ScrollTrigger);
+
 
