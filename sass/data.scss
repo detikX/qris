@@ -68,13 +68,17 @@
     .presen {
         position: absolute;
         bottom: -16%;
-        right: -24%;
-        width: 220px;
+        right: -36%;
+        width: 60%;
         z-index: 3;
-        height: 220px;
+        height: 60%;
 
         @media screen and (max-width:768px) {
             right: -36%;
+             width: 220px;
+        z-index: 3;
+        height: 220px;
+
         }
 
         img {
@@ -86,14 +90,18 @@
 
     .boss {
         position: absolute;
-        left: -24%;
+        left: -36%;
         bottom: -16%;
-        width: 220px;
-        height: 220px;
+        width: 60%;
+        height: 60%;
         z-index: 3;
 
         @media screen and (max-width:768px) {
             left: -36%;
+            width: 220px;
+        height: 220px;
+        z-index: 3;
+
         }
 
         img {

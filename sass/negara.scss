@@ -2,6 +2,102 @@
     // background: red;
     background: #8ae7c7;
     padding: 0;
+    &-nama {
+        position: relative;
+    }
+    .check-fa {
+        position: absolute;
+        right: 0;
+        top: 0;
+        .color-green {
+            color: #a6c667;
+        }
+   
+        i {
+            text-align: center;
+            font-size: 3rem;
+        }
+    }
+    .flagx {
+        position: relative;
+        width: 200px;
+        height: auto;
+        display: inline-block;
+        @media screen and (max-width:768px) {
+
+        margin: 0 auto;
+        display: block;
+    }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    @keyframes lala {
+        0% {
+            left: -24%;
+            opacity: 0;
+            // top: 15%;
+        }
+
+        10% {
+            left: -24%;
+            opacity: .3;
+            // top: 15%;
+        }
+
+        50% {
+            left: 24%;
+            opacity: .3;
+            // top: 5%;
+        }
+
+        90% {
+            left: 24%;
+            opacity: .3;
+            // top: 5%;
+        }
+
+        100% {
+            left: 24%;
+            opacity: 0;
+            // top: 5%;
+        }
+
+    }
+
+    .pesawat-bg {
+        position: absolute;
+        top: 30%;
+        left: 0;
+        width: 80px;
+        opacity: .3;
+        height: auto;
+        animation: lala 6s linear infinite;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .contentx {
+        display: inline-block;
+        margin-left: 24px;
+        width: 60%;
+        vertical-align: top;
+
+        @media screen and (max-width:768px) {
+            width: 100%;
+            margin-left: 0;
+            margin-top: 24px;
+        }
+    }
+
     .asean {
         position: absolute;
         bottom: 0;
@@ -9,34 +105,55 @@
         right: 0;
         width: 100%;
         height: 50vh;
+
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
     }
+
     .wrap-detikx {
         // min-height: 100vh;
         margin-top: -90vh;
     }
+
     h3 {
         color: #1a1a1a;
-        
+
     }
+
     .hand {
         position: absolute;
         right: 0%;
         bottom: 0;
         width: 300px;
         height: auto;
+
         @media screen and (max-width:768px) {
             width: 50%;
             right: -16%;
         }
+
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
     }
+}
+
+
+.fa-beat {
+     animation: fa-beat 1s linear infinite;
+}
+
+@keyframes fa-beat {
+    0%, 10% {
+    transform: scale(1);
+}
+45% {
+    transform: scale(.7);
+
+}
 }
