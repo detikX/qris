@@ -78,23 +78,21 @@
         }
 
         h2 {
+            font-size: 3rem;
+            color: red;
+            line-height: 4rem;
+            font-family: "Special Gothic Expanded One", sans-serif;
+            text-align: center;
             &.bigger {
                 font-size: 6rem;
-                letter-spacing: 2px;
-
+                // letter-spacing: 2px;
                 @media screen and (max-width: 768px) {
                     font-size: 5rem;
                     line-height: 4.5rem;
                 }
             }
 
-            font-size: 3rem;
-            color: red;
-            line-height: 4rem;
-            font-family: "Special Gothic Expanded One",
-            sans-serif;
-
-            text-align: center;
+            
 
             @media screen and (max-width: 768px) {
                 font-size: 1.6rem;
