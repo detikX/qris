@@ -5,6 +5,7 @@ Highcharts.setOptions({
 })
 
 Highcharts.chart('container', {
+    colors: [ '#4ECDC4', '#4F4F4F', '#FFE66D'],
     chart: {
         type: 'bar',
         backgroundColor: 'rgba(255,255,255,.7)'
