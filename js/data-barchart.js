@@ -16,7 +16,8 @@ Highcharts.chart('container', {
         text: null
     },
     xAxis: {
-        categories: ['2020', '2021', '2022', '2023', '2024'],
+        // categories: ['2020', '2021', '2022', '2023', '2024'],
+        categories: ['Q1 2023', 'Q2 2023','Q3 2023', 'Q4 2023','Q1 2024', 'Q2 2024', 'Q3 2024', 'Q4 2024'],
         // title: {
         //     text: null
         // },
@@ -62,7 +63,7 @@ Highcharts.chart('container', {
         // gridLineWidth: 0
     },
     tooltip: {
-        valueSuffix: '',
+        valueSuffix: ' Juta',
          style: {
             // fontWeight: 'bold',
             fontFamily: 'jost',
@@ -111,7 +112,7 @@ Highcharts.chart('container', {
     series: [{
         name: 'Volume Transaksi',
         data: [
-            46000000, 585000000, 1000000000, 2000000000, 4000000000
+                        125, 155, 201, 301, 374, 494, 619, 779
         ]
     }],
 });
@@ -128,7 +129,7 @@ Highcharts.chart('container2', {
         text: null
     },
     xAxis: {
-        categories: ['2020', '2021', '2022', '2023', '2024'],
+       categories: ['Q1 2023', 'Q2 2023','Q3 2023', 'Q4 2023','Q1 2024', 'Q2 2024', 'Q3 2024', 'Q4 2024'],
         // title: {
         //     text: null
         // },
@@ -174,7 +175,7 @@ Highcharts.chart('container2', {
         // gridLineWidth: 0
     },
     tooltip: {
-        valueSuffix: ' Rupiah',
+        valueSuffix: ' Triliun',
         style: {
             // fontWeight: 'bold',
             fontFamily: 'jost',
@@ -223,7 +224,7 @@ Highcharts.chart('container2', {
     series: [{
         name: 'Nilai Transaksi',
         data: [
-            4700000000000, 45700000000000, 90000000000000, 200000000000000, 300000000000000
+            13, 17, 20, 34, 42, 52, 66, 82
         ]
     }],
 });
