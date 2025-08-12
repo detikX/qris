@@ -18,7 +18,7 @@ Highcharts.chart('container', {
     },
     xAxis: {
         // categories: ['2020', '2021', '2022', '2023', '2024'],
-        categories: ['Q1 2023', 'Q2 2023','Q3 2023', 'Q4 2023','Q1 2024', 'Q2 2024', 'Q3 2024', 'Q4 2024'],
+        categories: ['2020', '2021','2022', '2023','2024'],
         // title: {
         //     text: null
         // },
@@ -113,7 +113,7 @@ Highcharts.chart('container', {
     series: [{
         name: 'Volume Transaksi',
         data: [
-                        125, 155, 201, 301, 374, 494, 619, 779
+                        48, 171, 386, 784, 2266
         ]
     }],
 });
@@ -130,7 +130,7 @@ Highcharts.chart('container2', {
         text: null
     },
     xAxis: {
-       categories: ['Q1 2023', 'Q2 2023','Q3 2023', 'Q4 2023','Q1 2024', 'Q2 2024', 'Q3 2024', 'Q4 2024'],
+       categories: ['2020','2021','2022','2023','2024'],
         // title: {
         //     text: null
         // },
@@ -225,7 +225,7 @@ Highcharts.chart('container2', {
     series: [{
         name: 'Nilai Transaksi',
         data: [
-            13, 17, 20, 34, 42, 52, 66, 82
+            3, 11, 38, 84, 242
         ]
     }],
 });
