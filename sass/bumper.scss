@@ -80,7 +80,7 @@
         h2 {
             font-size: 3rem;
             color: #65212c;
-            line-height: 4rem;
+            line-height: 3rem;
             font-family: "Special Gothic Expanded One", sans-serif;
             text-align: center;
             &.bigger {
@@ -95,8 +95,8 @@
             
 
             @media screen and (max-width: 768px) {
-                font-size: 1.6rem;
-                line-height: 2rem;
+                font-size: 2rem;
+                line-height: 2.5rem;
             }
         }
     }
