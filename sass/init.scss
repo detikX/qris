@@ -452,6 +452,7 @@ section {
 #nav.dark {
     // background: linear-gradient(-45deg, #1d6b60, #6edb9a) !important;
     background: rgba(0, 0, 0, 0.5) !important;
+    top: 0;
 }
 
 .footer {
@@ -778,4 +779,9 @@ section {
 
 .alls {
     margin-bottom: 16px;
+}
+
+
+.content_indent {
+    background: white;
 }
