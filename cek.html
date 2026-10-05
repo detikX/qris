@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leaflet Satellite Map</title>
+    <!-- Include Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+		}
+		.leaflet-container {
+			height: 100vh;
+			width: 100vw;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	</style>
+</head>
+<body>
+
+    <div id="map"></div>
+
+    <!-- Include Leaflet JavaScript -->
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script>
+        // 1. Initialize the map
+      const map = L.map('map').setView([-6.462654876950736, 106.81641975947225], 18.5);
+
+        // 2. Define the Esri Satellite Tile URL and Attribution
+        const esriSatelliteUrl = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}';
+        const esriSatelliteAttrib = 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community';
+
+        // 3. Create the tile layer and add it to the map
+        const satelliteLayer = L.tileLayer(esriSatelliteUrl, {
+            attribution: esriSatelliteAttrib,
+            maxZoom: 19
+        });
+
+         const polygon = L.polygon([
+            [-6.461878453645719, 106.81750334055495],
+            [-6.461886526326529, 106.81724608323127],
+            [-6.462327812175182, 106.81714047247708]
+        ]).addTo(map).bindPopup('I am a polygon.');
+
+            const polygonx = L.polygon([
+            [-6.463131533339685, 106.81726996632185],
+            [-6.462982858331127, 106.81744599647081],
+            [-6.462828353464142, 106.81735211322881],
+            [-6.46302075635447, 106.81713794333879]
+        ], {
+            color: 'red'
+        }).addTo(map).bindPopup('Ruang Kalapas');
+
+
+                    const sae_bawah = L.polygon([
+                    [-6.463678154629112, 106.81561858871453],
+
+[-6.463726127225105, 106.81523234932885],
+
+[-6.463544895901523, 106.81524307872542],
+
+[-6.463566217610406, 106.81555958018765],
+        ], {
+            color: 'green'
+        }).addTo(map).bindPopup('SAE Bawah');
+//         -6.463678154629112, 106.81561858871453
+
+// -6.463726127225105, 106.81523234932885
+
+// -6.463544895901523, 106.81524307872542
+
+// -6.463566217610406, 106.81555958018765
+        // const circle = L.circle([-6.463146522094219, 106.81670433828764], {
+        //     color: 'red',
+        //     fillColor: '#f03',
+        //     fillOpacity: 0.5,
+        //     radius: 50
+        // }).addTo(map).bindPopup('I am a circle.');
+    
+    
+        // const popup = L.popup()
+        //     .setLatLng([-6.463181090924621, 106.81763963079672])
+        //     .setContent('Lapas Kelas IIA Cibinong')
+        //     .openOn(map);
+
+        satelliteLayer.addTo(map);
+    </script>
+</body>
+</html>
